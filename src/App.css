@@ -449,6 +449,17 @@
   padding: 2rem;
 }
 
+.visual-poster-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  display: block;
+}
+
 .visual-art-pattern {
   position: absolute;
   inset: 0;
@@ -466,14 +477,16 @@
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(17, 17, 22, 0.2) 0%,
-    rgba(17, 17, 22, 0.85) 100%
+    rgba(17, 17, 22, 0.05) 0%,
+    rgba(17, 17, 22, 0.35) 100%
   );
+  z-index: 2;
+  pointer-events: none;
 }
 
 .visual-badge {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -1668,3 +1681,4 @@
     padding: 1.15rem;
   }
 }
+

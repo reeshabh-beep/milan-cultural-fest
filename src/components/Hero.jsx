@@ -109,20 +109,20 @@ export default function Hero({ onRegisterClick, onSelectCategory }) {
           </div>
         </div>
 
-        {/* Decorative Visual Card Frame */}
-        <div className="hero-visual" aria-hidden="true">
+        {/* Festival Poster Showcase Card */}
+        <div className="hero-visual">
           <div className="visual-card-wrapper">
             <div className="visual-card">
               <div className="visual-card-inner">
-                <div className="visual-art-pattern" />
+                <img
+                  src="/images/festival-poster.jpg"
+                  alt="Milan SRM Cultural Festival Poster"
+                  className="visual-poster-img"
+                />
                 <div className="visual-overlay" />
                 <div className="visual-badge">
                   <span className="visual-badge-dot"></span>
                   <span>SRM Cultural Festival</span>
-                </div>
-                <div className="visual-footer">
-                  <div className="visual-logo-mark">MILAN</div>
-                  <div className="visual-tagline">Creativity • Passion • Spotlight</div>
                 </div>
               </div>
             </div>
